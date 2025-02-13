@@ -16,7 +16,7 @@ const features = [
   {
     icon: CircleDollarSign,
     title: "No Subscriptions",
-    description: "Your first guide is completely free, and any you buy are your forever.",
+    description: "Your first guide is completely free, and any you buy are yours forever.",
   },
   {
     icon: CloudDownload,
