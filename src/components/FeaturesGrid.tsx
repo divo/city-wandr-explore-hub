@@ -1,12 +1,12 @@
 
-import { Globe, Map, Compass, Camera } from "lucide-react";
+import { Globe, Map, CircleDollarSign, CloudDownload } from "lucide-react";
 import { motion } from "framer-motion";
 
 const features = [
   {
     icon: Globe,
     title: "Global Coverage",
-    description: "Access detailed guides for cities worldwide, from hidden gems to popular destinations.",
+    description: "Access detailed guides for cities worldwide, including the most popular destinations.",
   },
   {
     icon: Map,
@@ -14,14 +14,14 @@ const features = [
     description: "Create personalized travel plans that match your interests and schedule.",
   },
   {
-    icon: Compass,
-    title: "Local Insights",
-    description: "Get recommendations from locals who know their cities inside and out.",
+    icon: CircleDollarSign,
+    title: "No Subscriptions",
+    description: "Your first guide is completely free, and any you buy are your forever.",
   },
   {
-    icon: Camera,
-    title: "Photo Spots",
-    description: "Discover the most Instagram-worthy locations in every city.",
+    icon: CloudDownload,
+    title: "Fully Offline",
+    description: "Explore without the internet, perfect when roaming far from home.",
   },
 ];
 
