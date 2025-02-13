@@ -1,4 +1,3 @@
-
 import { Globe, Map, CircleDollarSign, CloudDownload } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -16,7 +15,7 @@ const features = [
   {
     icon: CircleDollarSign,
     title: "No Subscriptions",
-    description: "Your first guide is completely free, and any you buy are yours forever.",
+    description: "Your first guide is completely free, any you buy are yours forever.",
   },
   {
     icon: CloudDownload,
@@ -27,11 +26,11 @@ const features = [
 
 const FeaturesGrid = () => {
   return (
-    <section className="py-24 bg-peach-200">
+    <section className="pt-[200px] pb-24 bg-peach-200">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-semibold text-teal-900 mb-4">
-            Everything You Need to Travel Better
+            Your perfect companion to explore the cities you love
           </h2>
           <p className="text-teal-900/70 max-w-2xl mx-auto">
             Our comprehensive features ensure you'll have the best possible travel experience.
