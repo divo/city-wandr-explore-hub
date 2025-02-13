@@ -1,0 +1,64 @@
+
+import { Globe, Map, Compass, Camera } from "lucide-react";
+import { motion } from "framer-motion";
+
+const features = [
+  {
+    icon: Globe,
+    title: "Global Coverage",
+    description: "Access detailed guides for cities worldwide, from hidden gems to popular destinations.",
+  },
+  {
+    icon: Map,
+    title: "Custom Itineraries",
+    description: "Create personalized travel plans that match your interests and schedule.",
+  },
+  {
+    icon: Compass,
+    title: "Local Insights",
+    description: "Get recommendations from locals who know their cities inside and out.",
+  },
+  {
+    icon: Camera,
+    title: "Photo Spots",
+    description: "Discover the most Instagram-worthy locations in every city.",
+  },
+];
+
+const FeaturesGrid = () => {
+  return (
+    <section className="py-24 bg-sand-100">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold text-earth-900 mb-4">
+            Everything You Need to Travel Better
+          </h2>
+          <p className="text-earth-800/70 max-w-2xl mx-auto">
+            Our comprehensive features ensure you'll have the best possible travel experience.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((feature, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="p-6 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+            >
+              <div className="w-12 h-12 rounded-xl bg-terracotta-500/10 flex items-center justify-center mb-4">
+                <feature.icon className="w-6 h-6 text-terracotta-500" />
+              </div>
+              <h3 className="text-xl font-semibold text-earth-900 mb-2">{feature.title}</h3>
+              <p className="text-earth-800/70">{feature.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FeaturesGrid;
