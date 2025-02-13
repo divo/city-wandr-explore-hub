@@ -10,7 +10,7 @@ const Index = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen bg-sand-50"
+      className="min-h-screen bg-peach-100"
     >
       <HeroSection />
       <FeaturesGrid />

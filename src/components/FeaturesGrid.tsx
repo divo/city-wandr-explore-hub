@@ -27,13 +27,13 @@ const features = [
 
 const FeaturesGrid = () => {
   return (
-    <section className="py-24 bg-sand-100">
+    <section className="py-24 bg-peach-200">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold text-earth-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold text-teal-900 mb-4">
             Everything You Need to Travel Better
           </h2>
-          <p className="text-earth-800/70 max-w-2xl mx-auto">
+          <p className="text-teal-900/70 max-w-2xl mx-auto">
             Our comprehensive features ensure you'll have the best possible travel experience.
           </p>
         </div>
@@ -46,13 +46,13 @@ const FeaturesGrid = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="p-6 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="p-6 rounded-2xl bg-peach-100 shadow-sm hover:shadow-md transition-shadow duration-300"
             >
               <div className="w-12 h-12 rounded-xl bg-terracotta-500/10 flex items-center justify-center mb-4">
                 <feature.icon className="w-6 h-6 text-terracotta-500" />
               </div>
-              <h3 className="text-xl font-semibold text-earth-900 mb-2">{feature.title}</h3>
-              <p className="text-earth-800/70">{feature.description}</p>
+              <h3 className="text-xl font-semibold text-teal-900 mb-2">{feature.title}</h3>
+              <p className="text-teal-900/70">{feature.description}</p>
             </motion.div>
           ))}
         </div>
