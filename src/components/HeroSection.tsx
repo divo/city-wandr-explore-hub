@@ -1,12 +1,16 @@
-
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import { Button } from "./ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden bg-peach-100">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-[0.02]" />
+    <section className="min-h-[70vh] flex items-start justify-center px-4 pt-16 relative overflow-hidden bg-peach-100">
+      <div className="absolute inset-0 bg-cover bg-center opacity-40" 
+           style={{ 
+             backgroundImage: `url('/paris.jpg')`,
+             backgroundColor: '#000'
+           }} 
+      />
       
       <div className="max-w-6xl mx-auto text-center relative z-10">
         <motion.div
@@ -23,7 +27,7 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl font-display font-semibold text-teal-900 tracking-tight">
             Explore the World's
             <br />
-            Hidden Gems
+            Best Cities
           </h1>
           
           <p className="max-w-2xl mx-auto text-lg text-teal-900/80 mt-6">
@@ -31,12 +35,28 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <Button size="lg" className="bg-terracotta-500 hover:bg-terracotta-500/90 text-white">
-              Start Exploring
+            <Button
+              size="lg"
+              className="bg-black hover:bg-black/90 text-white inline-flex items-center gap-2 p-0 h-[44px]"
+              asChild
+            >
+              <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+                <img src="/app-store-badge.svg" alt="Download on App Store" className="h-full" />
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-teal-900/20 hover:bg-peach-200">
-              View Destinations
-            </Button>
+            <div className="flex flex-col items-center">
+              <Button
+                size="lg"
+                className="bg-black/50 hover:bg-black/65 text-white inline-flex items-center gap-2 p-0 h-[44px]"
+                disabled
+                asChild
+              >
+                <a href="#" className="cursor-not-allowed">
+                  <img src="/play_store.png" alt="Get it on Google Play" className="h-full opacity-50" />
+                </a>
+              </Button>
+              <span className="text-sm text-teal-900 mt-1">Coming Soon</span>
+            </div>
           </div>
         </motion.div>
       </div>
