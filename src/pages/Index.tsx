@@ -1,8 +1,8 @@
-
 import { motion } from "framer-motion";
 import HeroSection from "@/components/HeroSection";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import NewsletterSection from "@/components/NewsletterSection";
+import PhonePreview from "@/components/PhonePreview";
 
 const Index = () => {
   return (
@@ -13,6 +13,7 @@ const Index = () => {
       className="min-h-screen bg-peach-100"
     >
       <HeroSection />
+      <PhonePreview />
       <FeaturesGrid />
       <NewsletterSection />
     </motion.div>
