@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import NewsletterSection from "@/components/NewsletterSection";
 import PhonePreview from "@/components/PhonePreview";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -25,6 +26,7 @@ const Index = () => {
           <FeaturesGrid />
           <NewsletterSection />
         </div>
+        <Footer />
       </div>
     </motion.div>
   );
