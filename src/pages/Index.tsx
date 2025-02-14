@@ -14,9 +14,7 @@ const Index = () => {
     >
       <div className="flex flex-col">
         <HeroSection />
-        <div className="container mx-auto px-4">
-          <PhonePreview />
-        </div>
+        <PhonePreview />
         <FeaturesGrid />
         <NewsletterSection />
       </div>
