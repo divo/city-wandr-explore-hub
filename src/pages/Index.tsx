@@ -12,10 +12,14 @@ const Index = () => {
       transition={{ duration: 0.5 }}
       className="min-h-screen bg-peach-100"
     >
-      <HeroSection />
-      <PhonePreview />
-      <FeaturesGrid />
-      <NewsletterSection />
+      <div className="flex flex-col">
+        <HeroSection />
+        <div className="container mx-auto px-4">
+          <PhonePreview />
+        </div>
+        <FeaturesGrid />
+        <NewsletterSection />
+      </div>
     </motion.div>
   );
 };

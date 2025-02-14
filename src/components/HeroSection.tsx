@@ -4,22 +4,15 @@ import { Button } from "./ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-[70vh] flex items-start justify-center px-4 pt-16 relative overflow-hidden bg-peach-100">
-      <div className="absolute inset-0 bg-cover bg-center opacity-40" 
-           style={{ 
-             backgroundImage: `url('/paris.jpg')`,
-             backgroundColor: '#000'
-           }} 
-      />
-      
-      <div className="max-w-6xl mx-auto text-center relative z-10">
+    <section className="container mx-auto px-4 py-16">
+      <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="space-y-6"
+          className="space-y-6 text-center"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-peach-200 text-teal-900 mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-peach-200 text-teal-900">
             <MapPin size={16} className="text-terracotta-500" />
             <span className="text-sm font-medium">Your Personal Travel Companion</span>
           </div>
@@ -30,7 +23,7 @@ const HeroSection = () => {
             Best Cities
           </h1>
           
-          <p className="max-w-2xl mx-auto text-lg text-teal-900/80 mt-6">
+          <p className="max-w-2xl mx-auto text-lg text-teal-900/80">
             Discover unique destinations, create unforgettable memories, and travel like a local with our curated city guides.
           </p>
 
