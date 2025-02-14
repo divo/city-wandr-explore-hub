@@ -20,12 +20,13 @@ const Index = () => {
             className="w-full bg-cover bg-center"
             style={{
               backgroundImage: "url('/paris.jpg')",
-              paddingBottom: "133%", // This extends the background by 1/3 extra
+              height: "100vh", // Set initial height to viewport height
+              paddingBottom: "33.33%", // Add 1/3 extra height
             }}
           >
             <div className="absolute inset-0 bg-black/40" /> {/* Overlay for better text readability */}
           </div>
-          <div className="absolute inset-0">
+          <div className="absolute inset-0 flex flex-col">
             <HeroSection />
             <PhonePreview />
           </div>
@@ -38,4 +39,3 @@ const Index = () => {
 };
 
 export default Index;
-
