@@ -34,7 +34,7 @@ const HeroSection = () => {
                 className="bg-black hover:bg-black/90 text-white inline-flex items-center gap-2 p-0 h-[44px] w-auto"
                 asChild
               >
-                <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://apps.apple.com/app/id6741071597" target="_blank" rel="noopener noreferrer">
                   <img src="/app-store-badge.svg" alt="Download on App Store" className="h-full" />
                 </a>
               </Button>
