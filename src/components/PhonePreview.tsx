@@ -10,21 +10,26 @@ const PhonePreview = () => {
         viewport={{ once: true }}
         className="mx-auto w-full flex justify-center"
       >
-        <div className="relative w-full max-w-[300px]">
-          <div className="relative w-full pt-[200%]">
-            <video 
-              src="/CityWikiVideo.mp4" 
-              autoPlay 
-              muted 
-              loop 
-              playsInline 
-              className="absolute top-[4%] left-[4.5%] w-[91%] h-auto rounded-lg object-cover z-10"
-            />
-            <img 
-              src="/phone_frame.png" 
-              alt="App Preview" 
-              className="absolute inset-0 w-full h-full object-contain z-20"
-            />
+        <div className="w-full max-w-[300px]">
+          <div className="relative">
+            <div className="relative w-full">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <video 
+                  src="/CityWikiVideo.mp4" 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline 
+                  className="w-[91%] h-auto rounded-lg object-cover z-10"
+                  style={{ marginTop: '0%' }}
+                />
+              </div>
+              <img 
+                src="/phone_frame.png" 
+                alt="App Preview Frame" 
+                className="relative w-full h-auto z-20"
+              />
+            </div>
           </div>
         </div>
       </motion.div>
