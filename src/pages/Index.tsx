@@ -12,8 +12,11 @@ const Index = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col bg-peach-200">
-        <div className="bg-peach-100 pb-[13%]">
-          <HeroSection />
+        <div className="relative bg-peach-100 pb-[13%]">
+          <div className="absolute inset-0 bg-[url('/paris.jpg')] bg-cover bg-center opacity-25" />
+          <div className="relative">
+            <HeroSection />
+          </div>
         </div>
         <div className="-mt-[13%]">
           <PhonePreview />
