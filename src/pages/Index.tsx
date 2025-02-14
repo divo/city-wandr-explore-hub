@@ -10,13 +10,18 @@ const Index = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen bg-peach-100"
     >
-      <div className="flex flex-col">
-        <HeroSection />
-        <PhonePreview />
-        <FeaturesGrid />
-        <NewsletterSection />
+      <div className="flex flex-col bg-peach-200">
+        <div className="bg-peach-100 pb-[13%]">
+          <HeroSection />
+        </div>
+        <div className="-mt-[13%]">
+          <PhonePreview />
+        </div>
+        <div className="bg-peach-200">
+          <FeaturesGrid />
+          <NewsletterSection />
+        </div>
       </div>
     </motion.div>
   );
