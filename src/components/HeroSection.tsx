@@ -28,15 +28,17 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <Button
-              size="lg"
-              className="bg-black hover:bg-black/90 text-white inline-flex items-center gap-2 p-0 h-[44px]"
-              asChild
-            >
-              <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
-                <img src="/app-store-badge.svg" alt="Download on App Store" className="h-full" />
-              </a>
-            </Button>
+            <div className="flex flex-col items-center">
+              <Button
+                size="lg"
+                className="bg-black hover:bg-black/90 text-white inline-flex items-center gap-2 p-0 h-[44px] w-auto"
+                asChild
+              >
+                <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+                  <img src="/app-store-badge.svg" alt="Download on App Store" className="h-full" />
+                </a>
+              </Button>
+            </div>
             <div className="flex flex-col items-center">
               <Button
                 size="lg"
