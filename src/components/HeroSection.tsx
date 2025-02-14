@@ -12,15 +12,18 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="space-y-6 text-center"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-peach-200 text-teal-900">
-            <MapPin size={16} className="text-terracotta-500" />
-            <span className="text-sm font-medium">Your Personal Travel Companion</span>
+          <div>
+            <img 
+              src="/logo-transparent.png" 
+              alt="City Wandr Logo" 
+              className="h-48 mx-auto"
+            />
           </div>
           
           <h1 className="text-5xl md:text-7xl font-display font-semibold text-teal-900 tracking-tight">
             Explore the World's
             <br />
-            Best Cities
+            Best Cities with City Wandr
           </h1>
           
           <p className="max-w-2xl mx-auto text-lg text-teal-900/80">
