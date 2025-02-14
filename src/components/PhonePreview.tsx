@@ -1,9 +1,12 @@
-
 import { motion } from "framer-motion";
 
 const PhonePreview = () => {
   return (
-    <div className="w-full relative">
+    <div className="relative w-full">
+      <div className="absolute inset-0">
+        <div className="h-1/3 bg-peach-100" />
+        <div className="h-2/3 bg-peach-200" />
+      </div>
       <div className="relative container mx-auto px-4 py-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,4 +43,4 @@ const PhonePreview = () => {
   );
 };
 
-export default PhonePreview;
+export default PhonePreview; 
