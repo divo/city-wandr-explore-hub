@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies with exact versions and only production dependencies
-RUN npm ci --only=production
+# Install ALL dependencies (including dev dependencies) for build
+RUN npm ci
 
 # Copy source code
 COPY . .
@@ -47,4 +47,4 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:3000/ || exit 1
 
 # Start the server
-CMD ["serve", "-s", "dist", "-l", "3000"] 
+CMD ["serve", "-s", "dist", "-l", "3000"]
